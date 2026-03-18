@@ -115,6 +115,12 @@ main {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.7;
 }
 
 /* 인생 작품 카드 */
@@ -368,4 +374,55 @@ footer {
   --card-bg-color: #fafafa;
   --divider-color: #e8e8e8;
   --font-default-color: #333;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    object-fit: contain;
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #bbb;
 }
