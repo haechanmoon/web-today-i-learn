@@ -1,0 +1,23 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# IntelliJ 설정 파일 무시
+.idea/
+*.iml
+*.iws
+
+# Mac OS 임시 파일 무시 (맥 유저시라면 필수!)
+.DS_Store
+
+# 기타 등등 백엔드(Java/Spring) 개발 시 보통 무시하는 것들
+build/
+out/
+*.class
+*.log
